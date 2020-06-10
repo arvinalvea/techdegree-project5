@@ -1,0 +1,42 @@
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+#pic-search {
+    flex-basis: 50%;
+    height: 40px;
+    border: 2px solid rgba(211, 211, 211, .7);
+    border-radius: 5px;
+    align-self: center;
+}
+
+/* ============================================= */
+/*              Layout styles                    */
+/* ============================================= */
+
+form {
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.wrapper {
+    /* background: tomato; */
+    margin: 30px auto;
+    width: 70%;
+    height: 90vh;
+}
+
+
+/* ============================================= */
+/*                  Flexbox                      */
+/* ============================================= */
+
+form,
+.wrapper {
+    display: flex;
+}
