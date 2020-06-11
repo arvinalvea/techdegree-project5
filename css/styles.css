@@ -70,7 +70,6 @@ a {
 @media (min-width:768px) {
     
     .inner-wrapper {
-        justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -79,20 +78,20 @@ a {
         margin-bottom: auto;
     }
 
-    /* .pictures {
-        width: 150px;
-        height: 150px;
-    } */
-
     .item {	
         flex-basis: calc(100% / 4);
-        /* margin-bottom: 10px;
-        margin-left: auto;
-        margin-right: auto; */
+        padding: 1.9em;
+        width: 250px;
+        height: 40vh;
+    }
+
+    .pictures {
+        margin-top: 0;
+        height: 100%;
     }
 
     #pic-search {
-        width: 43%;
+        width: 40%;
     }
     
 }
