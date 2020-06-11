@@ -7,24 +7,23 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-body {
-    background: yellowgreen;
-    height: 100%;
-}
-
 ::placeholder {
     font-weight: 200;
     font-size: .7em;
     padding: 1em;
 }
 
+a {
+    text-decoration: none;
+}
+
 #pic-search {
-    width: 50%;
+    display: block;
+    width: 60%;
     height: 6vh;
     border: 2px solid rgba(211, 211, 211, .7);
     border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 /* ============================================= */
@@ -33,7 +32,7 @@ body {
 
 
 .wrapper {
-    /* background: tomato; */
+    display: block;
     margin: 30px auto;
     height: 90vh;
 }
@@ -44,6 +43,10 @@ body {
     margin-right: auto;
 }
 
+.inner-wrapper:last-child {
+    margin-bottom: 50px;
+}
+
 .pictures {
     width: 100%;
     margin-top: 20px;
@@ -51,13 +54,11 @@ body {
     margin-right: auto;
 }
 
-
 /* ============================================= */
 /*                  Flexbox                      */
 /* ============================================= */
 
-.wrapper,
-.innner-wrapper {
+.inner-wrapper {
     display: flex;
     flex-direction: column;
 }
@@ -68,17 +69,30 @@ body {
 
 @media (min-width:768px) {
     
-    .wrapper {
-        background: tomato;
-        flex-wrap: wrap;
-    }
-
     .inner-wrapper {
+        justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .pictures {
-        width: 24%;
+    .inner-wrapper:last-child {
+        margin-bottom: auto;
     }
+
+    /* .pictures {
+        width: 150px;
+        height: 150px;
+    } */
+
+    .item {	
+        flex-basis: calc(100% / 4);
+        /* margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #pic-search {
+        width: 43%;
+    }
+    
 }
