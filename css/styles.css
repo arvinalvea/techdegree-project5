@@ -61,7 +61,14 @@ a {
 
 .inner-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-basis: 50%;
+    width: 250px;
+    padding: 1.9em;
 }
 
 /* ============================================= */
@@ -70,19 +77,12 @@ a {
 
 @media (min-width:768px) {
     
-    .inner-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
     .inner-wrapper:last-child {
         margin-bottom: auto;
     }
 
     .item {	
         flex-basis: calc(100% / 4);
-        padding: 1.9em;
-        width: 250px;
         height: 40vh;
     }
 
