@@ -83,7 +83,6 @@ a {
 
     .item {	
         flex-basis: calc(100% / 4);
-        height: 40vh;
     }
 
     .pictures {
