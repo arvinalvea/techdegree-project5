@@ -7,10 +7,10 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-::placeholder {
+body {
     font-weight: 200;
-    font-size: .7em;
-    padding: 1em;
+    font-size: .8em;
+    color: lightgrey;
 }
 
 a {
@@ -24,6 +24,7 @@ a {
     border: 2px solid rgba(211, 211, 211, .7);
     border-radius: 5px;
     margin: 0 auto;
+    text-indent: 5px;
 }
 
 /* ============================================= */
