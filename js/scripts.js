@@ -17,7 +17,7 @@ document.getElementById("pic-search").addEventListener("keyup", function() {
       if (match != true || match === null) {
         $('.item').eq(index).hide();
         if ($('.item').length === hidden.length) {
-          $('#noPhoto').removeAttr('hidden');;
+          $('#noPhoto').removeAttr('hidden');
            } else {
              $('#noPhoto').attr('hidden', true);
            }
